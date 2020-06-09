@@ -9,7 +9,7 @@ public class Balloon : MonoBehaviour
     public void AddScore()
     {
         PlayerStats.currentScore += scoreValue;
-        Pop();
+        //Pop();
     }
 
     void Pop()
