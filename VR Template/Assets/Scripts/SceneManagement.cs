@@ -5,11 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    public string nextSceneName;
+    public string playGameSceneName;
+    public string lootBoxSceneName;
+    public string mainMenuSceneName;
 
-    public void LoadNextScene()
+    public void PlayGameScene()
     {
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene(playGameSceneName);
+    }
+
+    public void LoadLootBoxScene()
+    {
+        SceneManager.LoadScene(lootBoxSceneName);
+    }
+
+    public void LoadMainMenuScene()
+    {
+        SceneManager.LoadScene(mainMenuSceneName);
     }
 
     public void QuitGame()
