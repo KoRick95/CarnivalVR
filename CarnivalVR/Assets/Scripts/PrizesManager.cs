@@ -18,10 +18,16 @@ public class PrizesManager : MonoBehaviour
         }
 
         // check if the prize has already been previously obtained
-        if (!obtainedPrizes.Contains(prize))
+        if (obtainedPrizes.Count > 0 && !obtainedPrizes.Contains(prize))
         {
             Instantiate(prize);
             obtainedPrizes.Add(prize);
+            Debug.Log(prize);
         }
+    }
+
+    private void Start()
+    {
+        obtainedPrizes = new List<GameObject>();
     }
 }
