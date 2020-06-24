@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
-    public GameObject dart;
+    public GameObject dartToThrow;
+    public GameObject crosshairDart;
+    public GameObject heldDartHigh;
+    public GameObject heldDartLow;
+    public RawImage crosshairRawImage;
     public int ammo = 0;
 
     private Camera playerCam;
@@ -29,7 +34,7 @@ public class PlayerScript : MonoBehaviour
 
     public void ThrowDart()
     {
-        if (dart == null)
+        if (dartToThrow == null)
         {
             Debug.LogError("The dart object has not been assigned.");
             return;
@@ -44,7 +49,7 @@ public class PlayerScript : MonoBehaviour
             }
 
             Vector3 throwDirection = crosshair.position - playerArm.position;
-            GameObject newDart = Instantiate(dart);
+            GameObject newDart = Instantiate(dartToThrow);
             newDart.transform.position = playerArm.transform.position;
             newDart.GetComponent<DartScript>().Shoot(throwDirection);
             ammo--;
@@ -101,6 +106,36 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    void UpdateAmmoVisuals()
+    {
+        if (ammo == 3)
+        {
+            crosshairDart.SetActive(true);
+            heldDartHigh.SetActive(true);
+            heldDartLow.SetActive(true);
+            crosshairRawImage.gameObject.SetActive(false);
+        }
+        else if (ammo == 2)
+        {
+            crosshairDart.SetActive(true);
+            heldDartHigh.SetActive(true);
+            heldDartLow.SetActive(false);
+        }
+        else if (ammo == 1)
+        {
+            crosshairDart.SetActive(true);
+            heldDartHigh.SetActive(false);
+            heldDartLow.SetActive(false);
+        }
+        else if (ammo == 0)
+        {
+            crosshairDart.SetActive(false);
+            heldDartHigh.SetActive(false);
+            heldDartLow.SetActive(false);
+            crosshairRawImage.gameObject.SetActive(true);
+        }
+    }
+
     private void Awake()
     {
         if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
@@ -121,6 +156,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
+        UpdateAmmoVisuals();
         ProcessInputs();
     }
 }

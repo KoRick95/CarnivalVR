@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
 
                 timerOn = false;
                 timer = defaultGameTime;
+                Debug.Log("Time over");
             }
         }
     }

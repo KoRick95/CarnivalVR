@@ -85,6 +85,6 @@ public class BalloonSpawnerScript : MonoBehaviour
         startPoint = this.transform.position;
 
         // testing...
-        Spawn();
+        //Spawn();
     }
 }
