@@ -48,7 +48,9 @@ public class PlayerScript : MonoBehaviour
             newDart.transform.position = playerArm.transform.position;
             newDart.GetComponent<DartScript>().Shoot(throwDirection);
             ammo--;
-            hudScript.UpdateAmmoHUD();
+
+            if (hudScript != null)
+                hudScript.UpdateAmmoHUD();
         }
     }
 

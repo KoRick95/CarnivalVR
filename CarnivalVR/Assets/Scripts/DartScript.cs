@@ -27,6 +27,11 @@ public class DartScript : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Start()
+    {
+        rb.useGravity = false;
+    }
+
     private void Update()
     {
         if (fired)

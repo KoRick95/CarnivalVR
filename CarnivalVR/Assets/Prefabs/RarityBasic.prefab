@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f7df0b54f0f404cb057eb0b68f5d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rarityName: Common
+  rarityName: Basic
   prizePool:
   - {fileID: 5154802243183618064, guid: 73f2ea099e525344a8a14513482b57f1, type: 3}
   - {fileID: 4930289932841295098, guid: 62148d01942bb224984c380345bfede5, type: 3}

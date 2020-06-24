@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5536609500768938893}
   - component: {fileID: 5536609500768938894}
   m_Layer: 0
-  m_Name: SuperRareLootbox
+  m_Name: LootboxSuperRare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rarities:
-  - {fileID: 2812096693726807316, guid: 4ed740ffc6b73144c9a1b4c0e7316898, type: 3}
-  - {fileID: 4238783644789276045, guid: 40cfbe0181e7701419c646868f954ef3, type: 3}
-  - {fileID: 5061050593677298390, guid: fdfc66de198be6f4187b76efa3175f39, type: 3}
+  - {fileID: 2812096693726807316, guid: ad9ee773b21f56e4a85a1f7c152ac4db, type: 3}
+  - {fileID: 4238783644789276045, guid: a68b6502343692d4aa010bdc0caf79d4, type: 3}
+  - {fileID: 5061050593677298390, guid: f4d7a5b23285aff4e8114fa4f6d253bf, type: 3}
   probabilities:
   - 25
   - 45
