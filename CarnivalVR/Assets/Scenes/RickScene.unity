@@ -1662,7 +1662,7 @@ RectTransform:
   m_GameObject: {fileID: 757499351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 2075646362}
   m_RootOrder: 0
@@ -1690,7 +1690,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8900000, guid: b40a1cb5f1124ec489cc1e7a533e46e6, type: 3}
+  m_Texture: {fileID: 2800000, guid: bafb3b6a3a34ddd449f1ddfcf825fd68, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4381,6 +4381,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DartRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776530632631816540, guid: 0f251c76b3fddf64ca56e5f128b2a531,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f251c76b3fddf64ca56e5f128b2a531, type: 3}
