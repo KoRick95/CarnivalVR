@@ -35,6 +35,8 @@ public class PlayerScript : MonoBehaviour
             return;
         }
 
+        StartGame();
+
         if (ammo > 0)
         {
             if (playerArm == null || crosshair == null)
