@@ -59,7 +59,11 @@ public class GameManager : MonoBehaviour
             if (timer < 0)
             {
                 // instantiate the lootbox
-                Instantiate(GetLootBox());
+                GameObject lootbox = GetLootBox();
+                if (lootbox != null)
+                {
+                    Instantiate(lootbox);
+                }
 
                 timerOn = false;
                 timer = defaultGameTime;
