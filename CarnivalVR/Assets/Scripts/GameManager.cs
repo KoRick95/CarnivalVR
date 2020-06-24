@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        
         if (timerOn)
         {
             timer -= Time.deltaTime;

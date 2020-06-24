@@ -1,8 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BalloonScript
+    - BalloonSpawnerScript
+    - DartScript
+    - GameManager
+    - HUDScript
     - ONSPSettings
+    - PlayerScript
     - PrizesManager
+    - ScoreScript
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRConfig
@@ -19,6 +26,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Management.XRManagerSettings
     Unity.XR.Oculus.dll:
     - Unity.XR.Oculus.OculusLoader
+    - Unity.XR.Oculus.OculusSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -30,10 +38,13 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
+    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
@@ -77,60 +88,76 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11324}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 11552}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11576}
     - Class: 114
-      Script: {instanceID: 11634}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 12160}
+      Script: {instanceID: 11716}
     - Class: 114
-      Script: {instanceID: 12416}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 12614}
+      Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 13080}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 13712}
+      Script: {instanceID: 12418}
     - Class: 114
-      Script: {instanceID: 13790}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 14152}
+      Script: {instanceID: 12968}
     - Class: 114
-      Script: {instanceID: 15560}
+      Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 15562}
+      Script: {instanceID: 13248}
     - Class: 114
-      Script: {instanceID: 15594}
+      Script: {instanceID: 13668}
     - Class: 114
-      Script: {instanceID: 15602}
+      Script: {instanceID: 13686}
     - Class: 114
-      Script: {instanceID: 15636}
+      Script: {instanceID: 13710}
     - Class: 114
-      Script: {instanceID: 15638}
+      Script: {instanceID: 13714}
     - Class: 114
-      Script: {instanceID: 15640}
+      Script: {instanceID: 13792}
     - Class: 114
-      Script: {instanceID: 15720}
+      Script: {instanceID: 14154}
     - Class: 114
-      Script: {instanceID: 21658}
+      Script: {instanceID: 14224}
     - Class: 114
-      Script: {instanceID: 22412}
+      Script: {instanceID: 14232}
     - Class: 114
-      Script: {instanceID: 23640}
+      Script: {instanceID: 15596}
     - Class: 114
-      Script: {instanceID: 23664}
+      Script: {instanceID: 15646}
     - Class: 114
-      Script: {instanceID: 23672}
+      Script: {instanceID: 15684}
+    - Class: 114
+      Script: {instanceID: 15686}
+    - Class: 114
+      Script: {instanceID: 15688}
+    - Class: 114
+      Script: {instanceID: 15868}
+    - Class: 114
+      Script: {instanceID: 21472}
+    - Class: 114
+      Script: {instanceID: 21496}
+    - Class: 114
+      Script: {instanceID: 21510}
+    - Class: 114
+      Script: {instanceID: 21548}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -1862,4 +1889,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/RickScene.unity
-  playerPath: D:/Projects/CarnivalVR/Builds/ver1.0.apk
+  playerPath: C:/Users/s191533/Documents/GitHub/CarnivalVR/CarnivalVR/Builds/ver1.1.apk
