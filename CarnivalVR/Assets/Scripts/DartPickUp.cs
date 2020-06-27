@@ -16,6 +16,7 @@ public class DartPickUp : MonoBehaviour
 
         if (!gameManager.timerOn)
         {
+            balloonSpawnerScript.Initialise();
             balloonSpawnerScript.Spawn();
             playerScript.StartGame();
             //gameManager.timerOn = true;

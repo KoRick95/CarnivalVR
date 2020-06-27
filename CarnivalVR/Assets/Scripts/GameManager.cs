@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     private ScoreScript scoreScript;
     private float timer = 0;
 
-    public GameObject GetLootBox()
+    public void GetLootBox()
     {
         // check the player's score
         float playerScore = scoreScript.score;
@@ -21,25 +21,25 @@ public class GameManager : MonoBehaviour
         if (playerScore < 50)
         {
             // player does not get a lootbox
-            return null;
+            return;
         }
         else if (playerScore >= 50 && playerScore < 150)
         {
             // player gets a common lootbox
-            return lootBoxes[0];
+            Instantiate(lootBoxes[0]);
         }
         else if (playerScore >= 150 && playerScore < 300)
         {
             // player gets a rare lootbox
-            return lootBoxes[1];
+            Instantiate(lootBoxes[1]);
         }
         else if (playerScore >= 300)
         {
             // player gets a super rare lootbox
-            return lootBoxes[2];
+            Instantiate(lootBoxes[2]);
         }
 
-        return null;
+        return;
     }
 
     private void Start()
@@ -59,11 +59,11 @@ public class GameManager : MonoBehaviour
             if (timer < 0)
             {
                 // instantiate the lootbox
-                GameObject lootbox = GetLootBox();
-                if (lootbox != null)
+                GetLootBox();
+                /*if (lootbox != null)
                 {
                     Instantiate(lootbox);
-                }
+                }*/
 
                 timerOn = false;
                 timer = defaultGameTime;

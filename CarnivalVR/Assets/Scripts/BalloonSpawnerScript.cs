@@ -63,6 +63,19 @@ public class BalloonSpawnerScript : MonoBehaviour
         }
     }
 
+    public void Initialise()
+    {
+        spawnIndexes = new List<int>(rows * columns);
+
+        for (int i = 0; i < rows * columns; ++i)
+            spawnIndexes.Add(i);
+
+        distX = width / columns;
+        distY = height / rows;
+
+        startPoint = this.transform.position;
+    }
+
     private void OnValidate()
     {
         spawnNumber = Mathf.Min(spawnNumber, rows * columns);
@@ -74,17 +87,6 @@ public class BalloonSpawnerScript : MonoBehaviour
 
     private void Start()
     {
-        spawnIndexes = new List<int>(rows * columns);
-
-        for (int i = 0; i < rows * columns; ++i)
-            spawnIndexes.Add(i);
-
-        distX = width / columns;
-        distY = height / rows;
-
-        startPoint = this.transform.position;
-
-        // testing...
-        //Spawn();
+        Initialise();
     }
 }

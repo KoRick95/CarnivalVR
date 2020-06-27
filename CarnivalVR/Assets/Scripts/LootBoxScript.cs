@@ -57,7 +57,5 @@ public class LootBoxScript : MonoBehaviour
                 prizesManager.ObtainPrize(prize);
             }
         }
-
-        Destroy(this.gameObject);
     }
 }
